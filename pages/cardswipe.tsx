@@ -1,7 +1,12 @@
-import { VFC } from 'react'
+import { VFC, useState } from 'react'
+import styled from '@emotion/styled'
 
 const CardSwipe: VFC = () => {
-  return <div></div>
+  const [count, setCount] = useState(0)
+  
+  return (
+    
+  )
 }
 
 export default CardSwipe
