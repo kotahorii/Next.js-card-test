@@ -1,5 +1,5 @@
 import { IconButton } from '@chakra-ui/button'
-import { Stack, Text } from '@chakra-ui/layout'
+import { Box, Stack, Text } from '@chakra-ui/layout'
 import { useState } from 'react'
 import { AiOutlineDoubleLeft } from 'react-icons/ai'
 import { AiOutlineDoubleRight } from 'react-icons/ai'
@@ -26,6 +26,7 @@ export default function Home() {
       justify="center"
       align="center"
       spacing="5"
+      color="gray.500"
     >
       <Stack
         boxShadow="lg"
@@ -35,9 +36,11 @@ export default function Home() {
         p="5"
         align="center"
       >
-        <Text>{data.title}</Text>
-        <Text>{count}</Text>
-        <Text>{cards.length}</Text>
+        <Box bg="gray.300" w="100%" h="70%" borderRadius="lg"></Box>
+        <Text fontSize="18px" fontWeight="bold">
+          {data.title}
+        </Text>
+        <Text>{data.content}</Text>
       </Stack>
       <Stack direction="row" justify="center" align="center" spacing="5">
         <IconButton
